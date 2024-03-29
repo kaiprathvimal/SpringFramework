@@ -2,6 +2,7 @@ package org.example;
 
 public class Programmer {
     private int age;
+
     private Laptop laptop;
     public void comp(){
         laptop.runCode();
@@ -23,7 +24,10 @@ public class Programmer {
     public void setLaptop(Laptop laptop) {
         this.laptop = laptop;
     }
-    public Programmer() {
 
+
+    public Programmer(int age,Laptop lap) {
+        this.age = age;
+        this.laptop=lap;
     }
 }
